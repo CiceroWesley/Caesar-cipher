@@ -58,7 +58,11 @@ def main():
         k = int(input("Insira o k:"))
         print(descriptografar(text1,k))
     elif option == 3:
-        a = 1
+        text2 = input("Insira o texto:")
+        for k in range(1, 27):
+            print("Texto de cifra %d:" % (k))
+            print(descriptografar(text2, k))
+
     else:
         print("Opção inválida")
 
